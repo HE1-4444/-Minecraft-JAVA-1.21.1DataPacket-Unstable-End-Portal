@@ -1,6 +1,6 @@
 # Unstable End Portal
 # MADE BY EnderHEI/HE1-4444
-
+(now hava a bug i will fix that late)
 一个简单的数据包，让末地传送门不再将玩家传送到主岛，而是随机传送到外岛（1000-3000 格）。
 
 包含地面安全检查：玩家脚下没有方块时，会生成一个黑曜石平台。

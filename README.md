@@ -13,13 +13,15 @@ It includes a ground safety check and creates an obsidian platform when no block
 
 Edit `data/unstable_end_portal/function/config.mcfunction`, then run `/reload`.
 
-- `#delay`: delay in ticks. `20` is about one second.
-- `min_distance` and `max_distance`: random teleport distance.
-- `message`: chat message and color.
-- `*_enabled`: enable or disable darkness, blindness, and slowness.
-- `*_amplifier`: effect level, where `0` is level I.
+# Configuration for Unstable End Portal V3.
+# Set this value to 1 to stop routing players who have completed The End?
+# Set this value to 0 to keep routing them.
+scoreboard objectives add uep3_config dummy
+scoreboard players set #stop_after_dragon uep3_config 1
 
-Night Vision is intentionally disabled.
+# The delay is measured in game ticks. 20 ticks equals one second.
+scoreboard players set #delay uep3_delay 20
+
 
 ## License
 
